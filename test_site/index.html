@@ -1,0 +1,92 @@
+<!doctype html>
+<!--  这个是文档类型声明，告诉浏览器这个文档是HTML5文档，这个声明必须是文档的第一行，否则会出错 在html发明之初有比较大的用处，现在
+而在当今，它作用有限，可以说仅用于保证文档正常读取。现在知道这些就足够了。
+-->
+<html lang="en-US">
+<!-- <html> 元素。该元素包含整个页面的所有内容，有时候也称作根元素。里面也包含了 lang 属性，写明了页面的主要语种 -->
+<head>
+  <meta charset="utf-8" />      <!-- 表明编码类型-->
+  <meta name="viewport" content="width=device-width" />   <!--视口元素 可以确保页面以视口宽度进行渲染，避免移动端浏览器上因页面过宽导致缩放。-->
+  <title>My test page</title>     <!--<title> 元素。该元素设置页面的标题，显示在浏览器标签页上，也作为收藏网页的描述文字-->
+  <link href="style/style.css" rel="stylesheet" />
+</head>
+<!--<head> 元素。所有那些你加到页面中，且不向看客展示的页面成员，都以这个元素为容器。
+其中包含诸如提供给搜索引擎的关键字和页面描述、用作风格化页面的 CSS、字符集声明等等。
+ 再次强调，css文件的链接需要扔到head里面
+ -->
+
+<body>
+<h1>主标题</h1>
+<h2>顶层标题</h2>
+<h3>子标题</h3>
+<h4>次子标题</h4>
+
+<p>My cat is <strong>very</strong> grumpy.</p>
+<!--  嵌套元素， strong是特殊元素，在网页中表示的时候会被加粗  -->
+<img src="images/fufu.jpg" alt="My test image" />
+<!-- 图像元素没有结束标签，也没有内容，这是因为图像元素不需要通过内容来产生效果，它的作用是向其所在的位置嵌入一个图像。 -->
+<!-- 像之前所讲，该元素通过包含图像文件路径的地址属性 src，可在所在位置嵌入图像。
+该元素还包括一个替换文字属性 alt，是图像的描述内容，用于当图像不能被用户看见时显示，不可见的原因可能是：
+用户有视觉障碍。视障用户可以使用屏幕阅读器来朗读 alt 属性的内容。
+有些错误使图像无法显示。可以试着故意将 src 属性里的路径改错。保存并刷新页面就可以在图像位置看到：
+-->
+<p>
+  At Mozilla, we're a global community of technologists, thinkers, and builders
+  working together…
+</p>
+<p>At Mozilla, we're a global community of</p>
+
+<ul>
+  <li>technologists</li>
+  <li>thinkers</li>
+  <li>builders</li>
+</ul>
+
+<p>working together…</p>
+
+<a href="https://www.mozilla.org/zh-CN/about/manifesto/"
+>Mozilla Manifesto</a
+>
+<button>切换用户</button>
+<script src="scripts/main.js" defer></script>
+</body>
+</html>
+
+<!-- 这个是注释呢 -->
+<!--<p>My cat is very grumpy</p>   -->
+<!-- 解释下 <p>My cat is very grumpy</p> 这句话 这句话的意思是定义了一个元素p 元素p的内容是~ 其中<p> 表示p的开始，</p>表示这个元素的结束
+  注意下/ 这个东西，比较容易被遗忘
+  p的意思paragraph，也就是段落
+  类似的还有h1，h2 （1级2级标题）  h1是最大的标题，h2是第二大的标题
+  还有列表，有无序列表和有序列表，分别用ul和ol表示。列表的每个项目用一个列表项目（List Item）元素 <li> 包围。
+  <p>
+  At Mozilla, we're a global community of technologists, thinkers, and builders
+  working together…
+  </p>
+  这个小的段落可进行如下修改：
+  <p>At Mozilla, we're a global community of</p>
+
+  <ul>
+    <li>technologists</li>
+    <li>thinkers</li>
+    <li>builders</li>
+  </ul>
+
+  <p>working together…</p>
+
+   链接：链接非常重要 — 它们赋予 Web 网络属性。
+   要植入一个链接，我们需要使用一个简单的元素 — <a> — a 是 "anchor" （锚）的缩写。要将一些文本添加到链接中，只需如下几步：
+  1.选择一些文本。比如“Mozilla Manifesto”。
+  2.将文本包含在 <a> 元素内，就像这样：
+    <a>Mozilla Manifesto</a>
+  3.为此 <a> 元素添加一个 href 属性，就像这样：
+    <a href="">Mozilla Manifesto</a>
+  4.把属性的值设置为所需网址：
+    <a href="https://www.mozilla.org/zh-CN/about/manifesto/"
+      >Mozilla Manifesto</a
+    >
+    (href就表示链接的网站）
+    备注： href 这个名字可能开始看起来有点令人费解，代表超文本引用（ hypertext reference）。
+
+ -->
+<!-- body部分，元素的先后顺序也正是在网页中实际反映的顺序 -->
